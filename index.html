@@ -35,19 +35,30 @@ body { font-family: 'Muli', sans-serif; background: #f8f9fa; }
 <body>
 
 <!-- Sidebar -->
-<div class="sidebar d-flex flex-column align-items-center">
-  <img src="profile.jpg" alt="Profile Picture">
-  <h3>Makyar Hakeem</h3>
-  <h2>Muhammad Rizwan</h2>
-  <nav class="nav flex-column w-100 mt-4">
-    <a class="nav-link" href="#about">About Me</a>
-    <a class="nav-link" href="#experience">Professional Summary</a>
-    <a class="nav-link" href="#education-certifications">Education & Certifications</a>
-    <a class="nav-link" href="#skills">Skills</a>
-    <a class="nav-link" href="#awards">Awards</a>
-    <a class="nav-link" href="#projects">Projects</a>
+<div class="sidebar d-flex flex-column align-items-center p-3">
+  <!-- Profile Image -->
+  <div class="profile-img-wrapper mb-2">
+    <img src="profile.jpg" alt="Profile Picture" class="img-fluid rounded-circle" style="object-fit: cover; height: 150px; width: 150px; margin-top: -20px;">
+  </div>
+
+  <!-- Name -->
+  <h3 class="mb-0">Makyar Hakeem</h3>
+  <h2 class="mb-3">Muhammad Rizwan</h2> <!-- Reduced spacing by adjusting mb-3 -->
+
+  <!-- Navigation with Icons -->
+  <nav class="nav flex-column w-100 mt-2">
+    <a class="nav-link d-flex align-items-center" href="#about"><i class="fas fa-user me-2"></i> About Me</a>
+    <a class="nav-link d-flex align-items-center" href="#experience"><i class="fas fa-briefcase me-2"></i> Professional Summary</a>
+    <a class="nav-link d-flex align-items-center" href="#education-certifications"><i class="fas fa-graduation-cap me-2"></i> Education & Certifications</a>
+    <a class="nav-link d-flex align-items-center" href="#skills"><i class="fas fa-cogs me-2"></i> Skills</a>
+    <a class="nav-link d-flex align-items-center" href="#awards"><i class="fas fa-trophy me-2"></i> Awards</a>
+    <a class="nav-link d-flex align-items-center" href="#projects"><i class="fas fa-project-diagram me-2"></i> Projects</a>
   </nav>
 </div>
+
+<!-- Add in <head> if not already: -->
+<script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+
     
 <!-- Main Content -->
 <div class="content">
