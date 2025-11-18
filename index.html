@@ -38,57 +38,63 @@ body { font-family: 'Muli', sans-serif; background: #f8f9fa; }
 
     
 <!-- Sidebar -->
-<div class="sidebar d-flex flex-column align-items-center p-3">
+<div class="sidebar d-flex flex-column align-items-center p-3" 
+     style="height: 100vh; position: fixed; left: 0; top: 0; width: 260px">
+
   <!-- Profile Image -->
-  <div class="profile-img-wrapper mb-2">
-    <img src="profile.jpg" alt="Profile Picture" class="img-fluid rounded-circle" style="object-fit: cover; height: 150px; width: 150px; margin-top: -20px;">
+  <div class="profile-img-wrapper mb-1">
+    <img src="profile.jpg" alt="Profile Picture" class="img-fluid rounded-circle"
+         style="object-fit: cover; height: 150px; width: 150px; margin-top: 0px;">
   </div>
 
   <!-- Name -->
-  <h3 class="mb-0">Makyar Hakeem</h3>
-  <h2 class="mb-3">Muhammad Rizwan</h2> <!-- Reduced spacing by adjusting mb-3 -->
+  <h3 class="mb-0" style="line-height: 1.1;">Makyar Hakeem</h3>
+  <h2 class="mb-2" style="line-height: 1.1; font-size: 20px;">Muhammad Rizwan</h2>
 
-  <!-- Navigation with Icons -->
-  <nav class="nav flex-column w-100 mt-2">
-    <a class="nav-link d-flex align-items-center" href="#about"><i class="fas fa-user me-2"></i> About Me</a>
-    <a class="nav-link d-flex align-items-center" href="#experience"><i class="fas fa-briefcase me-2"></i> Professional Summary</a>
-    <a class="nav-link d-flex align-items-center" href="#education-certifications"><i class="fas fa-graduation-cap me-2"></i> Education & Certifications</a>
-    <a class="nav-link d-flex align-items-center" href="#skills"><i class="fas fa-cogs me-2"></i> Skills</a>
-    <a class="nav-link d-flex align-items-center" href="#awards"><i class="fas fa-trophy me-2"></i> Awards</a>
-    <a class="nav-link d-flex align-items-center" href="#projects"><i class="fas fa-project-diagram me-2"></i> Projects</a>
+  <!-- Navigation -->
+  <nav class="nav flex-column w-100 mt-1">
+    <a class="nav-link d-flex align-items-center py-1" href="#about"><i class="fas fa-user me-2"></i> About Me</a>
+    <a class="nav-link d-flex align-items-center py-1" href="#experience"><i class="fas fa-briefcase me-2"></i> Professional Summary</a>
+    <a class="nav-link d-flex align-items-center py-1" href="#education-certifications"><i class="fas fa-graduation-cap me-2"></i> Education</a>
+    <a class="nav-link d-flex align-items-center py-1" href="#skills"><i class="fas fa-cogs me-2"></i> Skills</a>
+    <a class="nav-link d-flex align-items-center py-1" href="#awards"><i class="fas fa-trophy me-2"></i> Awards</a>
+    <a class="nav-link d-flex align-items-center py-1" href="#projects"><i class="fas fa-project-diagram me-2"></i> Projects</a>
   </nav>
 </div>
 
-<!-- Add in <head> if not already: -->
 <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+
+
+
     
     <!-- Main Content -->
-<div class="content">
-    
-<!-- Updated About Me Section with New Content -->
+<div class="content" style="margin-left: 270px; padding: 30px 40px;">
+
 <section class="resume-section" id="about">
-    <h1>About Me</h1>
 
-    <p>
-      I am an Electronics and Communication Engineer with a strong specialization in Embedded Systems, IoT, Robotics, and Automation. My experience spans end-to-end development of intelligent electronic systems, including firmware engineering, real-time signal processing, wireless communication integration, PCB design, and system-level testing using STM32, ESP32, and Raspberry Pi platforms. I have worked extensively with protocols such as LoRa, BLE, Zigbee, Wi-Fi, MQTT, and RF communication, enabling reliable and secure IoT connectivity across diverse applications.
+    <h1 class="mb-3" style="margin-top: 10px;">About Me</h1>
+
+    <p style="margin-bottom: 10px;">
+      I am an Electronics and Communication Engineer specializing in Embedded Systems, IoT, Robotics, and Automation...
     </p>
 
-    <p>
-      Throughout my academic and project journey, I have designed and built highly innovative prototypes, including an AI-based hospital surveillance robot, an EEG-controlled prosthetic arm, a smart wheelchair convertible to a stretcher, autonomous rovers, and multiple smart-city automation systems. These projects demonstrate my ability to integrate hardware, embedded software, sensor fusion, machine learning, and control algorithms into functional real-world solutions.
+    <p style="margin-bottom: 10px;">
+      Throughout my academic and project journey, I have designed and built highly innovative prototypes...
     </p>
 
-    <p>
-      As the Organizer for Google Developer Group (GDG) and President of the Creators Club at my innovation hub, I have led multiple teams, organized large-scale workshops and hackathons, and mentored students in electronics, coding, robotics, and system design. I have also represented my institute in prestigious competitions, including the IIT Madras Caterpillar Autonomous Vehicle Challenge, showcasing my skills in autonomy, computer vision, obstacle detection, and real-time embedded computing.
+    <p style="margin-bottom: 10px;">
+      As the Organizer for Google Developer Group (GDG) and President of the Creators Club...
     </p>
 
-    <p>
-      My strengths include leadership, problem-solving, rapid learning, technical creativity, and the ability to work calmly under pressure. I am passionate about building next-generation embedded solutions for smart cities, defense systems, healthcare automation, and transportation technology. With a strong honors degree foundation, practical hands-on experience, and a commitment to innovation, I aim to contribute to cutting-edge engineering environments where technology directly impacts society and drives future advancements.
+    <p style="margin-bottom: 5px;">
+      My strengths include leadership, problem-solving, rapid learning, and technical creativity...
     </p>
 
-    <div class="mt-4">
+    <!-- Contact Section -->
+    <div class="mt-2">
 
-      <!-- Phone Numbers -->
-      <p>
+      <!-- Phone 1 -->
+      <p class="mb-1">
         <a href="tel:+971505565926">
           <i class="fas fa-phone me-2"></i>+971-505565926
         </a>
@@ -97,7 +103,8 @@ body { font-family: 'Muli', sans-serif; background: #f8f9fa; }
         </a>
       </p>
 
-      <p>
+      <!-- Phone 2 -->
+      <p class="mb-1">
         <a href="tel:+919449217321">
           <i class="fas fa-phone me-2"></i>+919449217321
         </a>
@@ -107,16 +114,16 @@ body { font-family: 'Muli', sans-serif; background: #f8f9fa; }
       </p>
 
       <!-- Email -->
-      <p>
+      <p class="mb-1">
         <a href="mailto:mhrizwanmuhammad16@gmail.com">
           <i class="fas fa-envelope me-2"></i>mhrizwanmuhammad16@gmail.com
         </a>
       </p>
 
-      <!-- Social Links -->
+      <!-- Social -->
       <div class="d-flex gap-3 mt-2">
-           <a href="https://maps.app.goo.gl/BRvEbWsqRn1p6Sn1A" target="_blank">
-          <i class="fas fa-map-marker-alt me-2"></i>Dubai, UAE
+        <a href="https://maps.app.goo.gl/BRvEbWsqRn1p6Sn1A" target="_blank">
+          <i class="fas fa-map-marker-alt"></i> Dubai, UAE
         </a>
         <a href="https://www.linkedin.com/in/m-h-rizwan-2910d2002" target="_blank">
           <i class="fab fa-linkedin fa-2x"></i>
@@ -125,8 +132,12 @@ body { font-family: 'Muli', sans-serif; background: #f8f9fa; }
           <i class="fab fa-instagram fa-2x"></i>
         </a>
       </div>
+
     </div>
 </section>
+
+</div>
+
 
     
  <hr>
