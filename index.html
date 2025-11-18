@@ -1,129 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="description" content="Portfolio of Makyar Hakeem Muhammad Rizwan">
-<meta name="author" content="Makyar Hakeem Muhammad Rizwan">
-<title>Makyar Hakeem Muhammad Rizwan Portfolio</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>MHR Portfolio</title>
 
 <!-- Font Awesome -->
 <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
 
-<!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700|Muli:400,400i,800,800i" rel="stylesheet">
-
-<!-- Bootstrap CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <style>
-body { font-family: 'Muli', sans-serif; background: #f8f9fa; }
-.sidebar { position: fixed; top: 0; left: 0; height: 100%; width: 280px; background-color: #343a40; color: #fff; padding: 20px; }
-.sidebar img { width: 150px; height: 150px; object-fit: cover; border-radius: 50%; margin-bottom: 20px; }
-.sidebar h2 { font-size: 1.5rem; margin-bottom: 10px; }
-.sidebar h3 { font-size: 1.1rem; font-weight: 500; margin-bottom: 20px; }
-.sidebar a { color: #adb5bd; text-decoration: none; display: block; margin: 10px 0; }
-.sidebar a:hover { color: #1a73e8; }
-.content { margin-left: 300px; padding: 60px 40px; }
-.resume-section { margin-bottom: 80px; }
-.subheading { font-weight: 600; font-size: 1.1rem; margin-bottom: 15px; }
-.project-card { border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
-.modal-img { width: 100%; max-width: 400px; border-radius: 5px; }
-.skill-box { margin-top: 10px; font-weight: 500; }
+  body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    background: #f5f5f5;
+  }
+
+  /* SIDEBAR */
+  .sidebar {
+    width: 260px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    background: #fff;
+    padding-top: 20px;
+    border-right: 1px solid #ddd;
+    text-align: center;
+    z-index: 1000;
+    overflow-y: auto;
+  }
+
+  .sidebar img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+
+  .sidebar h3 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 0px;
+  }
+
+  .sidebar h2 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 5px;
+  }
+
+  .sidebar .nav-link {
+    font-size: 16px;
+    color: #333;
+    padding: 12px 15px;
+    text-align: left;
+    width: 100%;
+  }
+
+  .sidebar .nav-link:hover {
+    background: #efefef;
+    border-radius: 8px;
+  }
+
+  /* MAIN CONTENT */
+  .content {
+    margin-left: 280px; /* <-- enough space for sidebar */
+    padding: 40px;
+  }
+
+  .resume-section {
+    margin-bottom: 60px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.08);
+  }
+
+  h1 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  /* Social Icons */
+  .social-icons i {
+    font-size: 28px;
+    margin-right: 15px;
+    color: #333;
+  }
+
+  .social-icons i:hover {
+    color: #0077b5;
+  }
+
+  /* Responsive */
+  @media screen and (max-width: 992px) {
+    .sidebar {
+      position: relative;
+      width: 100%;
+      height: auto;
+      border-right: none;
+      padding-bottom: 20px;
+    }
+
+    .content {
+      margin-left: 0;
+      padding: 20px;
+    }
+  }
 </style>
 </head>
+
 <body>
 
-<!-- Sidebar -->
-<div class="sidebar d-flex flex-column align-items-center p-3">
-  <!-- Profile Image -->
-  <div class="profile-img-wrapper mb-2">
-    <img src="profile.jpg" alt="Profile Picture" class="img-fluid rounded-circle" style="object-fit: cover; height: 150px; width: 150px; margin-top: -20px;">
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <div class="profile-img-wrapper">
+      <img src="profile.jpg" alt="Profile Picture">
+    </div>
+
+    <h3>Makyar Hakeem</h3>
+    <h2>Muhammad Rizwan</h2>
+
+    <nav class="nav flex-column w-100 mt-3">
+      <a class="nav-link d-flex align-items-center" href="#about"><i class="fas fa-user me-2"></i> About Me</a>
+      <a class="nav-link d-flex align-items-center" href="#experience"><i class="fas fa-briefcase me-2"></i> Professional Summary</a>
+      <a class="nav-link d-flex align-items-center" href="#education-certifications"><i class="fas fa-graduation-cap me-2"></i> Education & Certifications</a>
+      <a class="nav-link d-flex align-items-center" href="#skills"><i class="fas fa-cogs me-2"></i> Skills</a>
+      <a class="nav-link d-flex align-items-center" href="#awards"><i class="fas fa-trophy me-2"></i> Awards</a>
+      <a class="nav-link d-flex align-items-center" href="#projects"><i class="fas fa-project-diagram me-2"></i> Projects</a>
+    </nav>
   </div>
 
-  <!-- Name -->
-  <h3 class="mb-0">Makyar Hakeem</h3>
-  <h2 class="mb-3">Muhammad Rizwan</h2> <!-- Reduced spacing by adjusting mb-3 -->
+  <!-- MAIN CONTENT -->
+  <div class="content">
 
-  <!-- Navigation with Icons -->
-  <nav class="nav flex-column w-100 mt-2">
-    <a class="nav-link d-flex align-items-center" href="#about"><i class="fas fa-user me-2"></i> About Me</a>
-    <a class="nav-link d-flex align-items-center" href="#experience"><i class="fas fa-briefcase me-2"></i> Professional Summary</a>
-    <a class="nav-link d-flex align-items-center" href="#education-certifications"><i class="fas fa-graduation-cap me-2"></i> Education & Certifications</a>
-    <a class="nav-link d-flex align-items-center" href="#skills"><i class="fas fa-cogs me-2"></i> Skills</a>
-    <a class="nav-link d-flex align-items-center" href="#awards"><i class="fas fa-trophy me-2"></i> Awards</a>
-    <a class="nav-link d-flex align-items-center" href="#projects"><i class="fas fa-project-diagram me-2"></i> Projects</a>
-  </nav>
-</div>
+    <!-- ABOUT ME -->
+    <section class="resume-section" id="about">
+      <h1>About Me</h1>
 
-<!-- Add in <head> if not already: -->
-<script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-    
-<!-- Updated About Me Section with New Content -->
-<section class="resume-section" id="about">
-    <h1>About Me</h1>
-
-    <p>
-      I am an Electronics and Communication Engineer with a strong specialization in Embedded Systems, IoT, Robotics, and Automation. My experience spans end-to-end development of intelligent electronic systems, including firmware engineering, real-time signal processing, wireless communication integration, PCB design, and system-level testing using STM32, ESP32, and Raspberry Pi platforms. I have worked extensively with protocols such as LoRa, BLE, Zigbee, Wi-Fi, MQTT, and RF communication, enabling reliable and secure IoT connectivity across diverse applications.
-    </p>
-
-    <p>
-      Throughout my academic and project journey, I have designed and built highly innovative prototypes, including an AI-based hospital surveillance robot, an EEG-controlled prosthetic arm, a smart wheelchair convertible to a stretcher, autonomous rovers, and multiple smart-city automation systems. These projects demonstrate my ability to integrate hardware, embedded software, sensor fusion, machine learning, and control algorithms into functional real-world solutions.
-    </p>
-
-    <p>
-      As the Organizer for Google Developer Group (GDG) and President of the Creators Club at my innovation hub, I have led multiple teams, organized large-scale workshops and hackathons, and mentored students in electronics, coding, robotics, and system design. I have also represented my institute in prestigious competitions, including the IIT Madras Caterpillar Autonomous Vehicle Challenge, showcasing my skills in autonomy, computer vision, obstacle detection, and real-time embedded computing.
-    </p>
-
-    <p>
-      My strengths include leadership, problem-solving, rapid learning, technical creativity, and the ability to work calmly under pressure. I am passionate about building next-generation embedded solutions for smart cities, defense systems, healthcare automation, and transportation technology. With a strong honors degree foundation, practical hands-on experience, and a commitment to innovation, I aim to contribute to cutting-edge engineering environments where technology directly impacts society and drives future advancements.
-    </p>
-
-    <div class="mt-4">
-      <!-- Address -->
       <p>
-        <a href="https://maps.app.goo.gl/BRvEbWsqRn1p6Sn1A" target="_blank">
-          <i class="fas fa-map-marker-alt me-2"></i>JLT Cluster Y, Dubai, UAE
-        </a>
-      </p>
-
-      <!-- Phone Numbers -->
-      <p>
-        <a href="tel:+971505565926">
-          <i class="fas fa-phone me-2"></i>+971-505565926
-        </a>
-        <a href="https://wa.me/971505565926" target="_blank" class="ms-2">
-          <i class="fab fa-whatsapp text-success"></i>
-        </a>
+        I am an Electronics and Communication Engineer with a strong specialization in Embedded Systems, IoT, Robotics, and Automation. My experience spans end-to-end development of intelligent electronic systems, including firmware engineering, real-time signal processing, wireless communication integration, PCB design, and system-level testing using STM32, ESP32, and Raspberry Pi platforms. I have worked extensively with protocols such as LoRa, BLE, Zigbee, Wi-Fi, MQTT, and RF communication, enabling reliable and secure IoT connectivity across diverse applications.
       </p>
 
       <p>
-        <a href="tel:+919449217321">
-          <i class="fas fa-phone me-2"></i>+919449217321
-        </a>
-        <a href="https://wa.me/919449217321?text=Hey" target="_blank" class="ms-2">
-          <i class="fab fa-whatsapp text-success"></i>
-        </a>
+        Throughout my academic and project journey, I have designed and built highly innovative prototypes, including an AI-based hospital surveillance robot, an EEG-controlled prosthetic arm, a smart wheelchair convertible to a stretcher, autonomous rovers, and multiple smart-city automation systems. These projects demonstrate my ability to integrate hardware, embedded software, sensor fusion, machine learning, and control algorithms into functional real-world solutions.
       </p>
 
-      <!-- Email -->
       <p>
-        <a href="mailto:mhrizwanmuhammad16@gmail.com">
-          <i class="fas fa-envelope me-2"></i>mhrizwanmuhammad16@gmail.com
-        </a>
+        As the Organizer for Google Developer Group (GDG) and President of the Creators Club at my innovation hub, I have led multiple teams, organized large-scale workshops and hackathons, and mentored students in electronics, coding, robotics, and system design. I have also represented my institute in prestigious competitions, including the IIT Madras Caterpillar Autonomous Vehicle Challenge, showcasing my skills in autonomy, computer vision, obstacle detection, and real-time embedded computing.
       </p>
 
-      <!-- Social Links -->
-      <div class="d-flex gap-3 mt-2">
-        <a href="https://www.linkedin.com/in/m-h-rizwan-2910d2002" target="_blank">
-          <i class="fab fa-linkedin fa-2x"></i>
-        </a>
-        <a href="https://www.instagram.com/m.h_rizwan/" target="_blank">
-          <i class="fab fa-instagram fa-2x"></i>
-        </a>
+      <p>
+        My strengths include leadership, problem-solving, rapid learning, technical creativity, and the ability to work calmly under pressure. I am passionate about building next-generation embedded solutions for smart cities, defense systems, healthcare automation, and transportation technology.
+      </p>
+
+      <!-- Contact -->
+      <div class="mt-4">
+        <p>
+          <a href="https://maps.app.goo.gl/BRvEbWsqRn1p6Sn1A" target="_blank">
+            <i class="fas fa-map-marker-alt me-2"></i>JLT Cluster Y, Dubai, UAE
+          </a>
+        </p>
+
+        <p>
+          <a href="tel:+971505565926">
+            <i class="fas fa-phone me-2"></i>+971-505565926
+          </a>
+          <a href="https://wa.me/971505565926" target="_blank" class="ms-2">
+            <i class="fab fa-whatsapp text-success"></i>
+          </a>
+        </p>
+
+        <p>
+          <a href="tel:+919449217321">
+            <i class="fas fa-phone me-2"></i>+919449217321
+          </a>
+          <a href="https://wa.me/919449217321?text=Hey" target="_blank" class="ms-2">
+            <i class="fab fa-whatsapp text-success"></i>
+          </a>
+        </p>
+
+        <p>
+          <a href="mailto:mhrizwanmuhammad16@gmail.com">
+            <i class="fas fa-envelope me-2"></i>mhrizwanmuhammad16@gmail.com
+          </a>
+        </p>
+
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/m-h-rizwan-2910d2002" target="_blank">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://www.instagram.com/m.h_rizwan/" target="_blank">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
       </div>
-    </div>
-</section>
+    </section>
+
+  </div>
+
+</body>
+</html>
+
 
     
  <hr>
